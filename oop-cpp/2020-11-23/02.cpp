@@ -58,7 +58,7 @@ public:
 
     // just a lazy demonstration how to use a range for on a map:
     //      .first      // the key in the map pair
-    //      .secon      // the value in the map pair
+    //      .second     // the value in the map pair
     static void printAxlesCount() {
         // ENUMS actually get assgined int values. So for axle.first we're gonna get
         // auto incremented int values - 0, 1, 2 & 3
