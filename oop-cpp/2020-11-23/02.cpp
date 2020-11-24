@@ -148,5 +148,5 @@ int main() {
 
     cout << "Truck middle axle tires wear: " << (*truck)[1].wear << "km" << endl; // Truck middle axle tires wear: 120km
 
-    delete bmw, truck;
+    delete bmw, vw, truck;
 }
