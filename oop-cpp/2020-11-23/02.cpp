@@ -39,6 +39,10 @@ private:
 public:
     Vehicle() : km(0) {}
 
+    ~Vehicle() {
+        delete[] this->axles;
+    }
+
     static Vehicle* factory(Type type, Drive drive = NONE) {
         // "new" returns a POINTER, remember! With "new" we reserve memory in the HEAP
         // BUT! REMEMBER! When we use "new" we should always use a "delete" somwehere
