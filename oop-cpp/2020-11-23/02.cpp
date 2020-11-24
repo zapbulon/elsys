@@ -96,7 +96,7 @@ public:
     // we're just exposing the tires condition if you access them using [] on
     // the vehicle iteself, so after:
     //          Vehicle* truck = Vehicle::factory(Vehicle::TRUCK);
-    //          truck[1] will give us access to the axle (Tire) with index 1 (middle axle)
+    //          (*truck)[1] will give us access to the axle (Tire) with index 1 (middle axle)
     //
     // Notice: we return a reference to the internal array element so we don't copy it
     const Tire& operator[](int index) const {
