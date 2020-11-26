@@ -109,5 +109,7 @@ int main() {
 
     set->print();
 
+    delete salt, pepper, set;
+
     return 0;
 }
