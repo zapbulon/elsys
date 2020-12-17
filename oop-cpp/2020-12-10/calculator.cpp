@@ -9,13 +9,7 @@ double Calculator::process(double operand) {
 double Calculator::process(char o) {
     for (auto op : operators) {
         if (op->get() == o) {
-            double a = operands.back();
-            operands.pop_back();
-
-            double b = operands.back();
-            operands.pop_back();
-
-            operands.push_back(op->process(a, b));
+            op->process(this->operands);
             return operands.back();
         }
     }

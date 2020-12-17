@@ -6,13 +6,13 @@
 
 using namespace std;
 
-class OperatorMinus : public Operator {
+class OperatorMinus : public Operator::Binary {
 
 public:
-    OperatorMinus() : Operator("minus", '-') {}
+    OperatorMinus() : Operator::Binary("minus", '-') {}
 
-    double process(double a, double b) {
-        return b - a;
+    double calculate(double a, double b) {
+        return a - b;
     }
 };
 
